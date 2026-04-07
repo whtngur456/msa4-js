@@ -4,8 +4,9 @@ for (let i = 1; i <= 5; i++) {
     line += "*";
   }
   console.log(line);
-  }
-for (let i = 1; i <= 5; i++) {
+}
+console.log('--------------------------');
+for (let i = 5; i <= 5; i++) {
   let line="";
   for(j=1; j<=5-i; j++){
     line +=" ";
@@ -16,6 +17,7 @@ for (let i = 1; i <= 5; i++) {
   console.log(line);
 }
 
+console.log('--------------------------');
 
 for (let i = 1; i <= 5; i++) {
   let line="";
@@ -27,3 +29,16 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(line);
 }
+
+
+for (let i =1; i < 5; i++) {
+  let line="";
+  for(k=1; k < i; k++) {
+    line += " ";
+  }
+  for(j=1; j < 6-i; j++) {
+    line += "*";
+  }
+  console.log(line);
+}
+
