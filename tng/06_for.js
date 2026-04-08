@@ -31,12 +31,12 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
-for (let i =1; i < 5; i++) {
+for (let i =1; i < 6; i++) {
   let line="";
   for(k=1; k < i; k++) {
     line += " ";
   }
-  for(j=1; j < 6-i; j++) {
+  for(j=1; j < 7-i; j++) {
     line += "*";
   }
   console.log(line);
