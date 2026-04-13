@@ -1,0 +1,10 @@
+#box {
+  background-image: url('./짱구.jpg');
+  width:200px;
+  height:200px;
+  opacity: 0;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
