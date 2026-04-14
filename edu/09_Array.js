@@ -131,15 +131,15 @@ function myIncludes(arr, search) {
 console.log(`마이어레이: ${myIncludes(myArr, 100)}`);
 console.log(`리터럴어레이: ${myIncludes([5, 4, 3], 5)}`);
 
-// // Array.sort(): T[] ** 원본 변경 **
-// // 배열의 요소를 문자열로 변환 후, 오름차순 정렬을 하고 정렬한 배열을 반환
-// arr = [6, 4, 7, 1, 11];
-// // resultArr = arr.sort(); > 1, 11, 4, 6, 7 > 문자열로 변환 후 정렬하여 11이 앞에 옴
-// resultArr = arr.sort((a, b) => a - b); // > 오름차순 정렬 / (b - a)하면 내림차순 정렬
-// // (a - b)가 양수일 경우, a가 큰수, b가 작은수로 인식하여 정렬
-// // (a - b)가 음수일 경우, a가 작은수, b가 큰수로 인식하여 정렬
-// // (a - b)가 0일 경우, 같은 값으로 인식하여 정렬하지 않음
-// console.log(arr, resultArr);
+// Array.sort(): T[] ** 원본 변경 **
+// 배열의 요소를 문자열로 변환 후, 오름차순 정렬을 하고 정렬한 배열을 반환
+arr = [6, 4, 7, 1, 11];
+// resultArr = arr.sort(); > 1, 11, 4, 6, 7 > 문자열로 변환 후 정렬하여 11이 앞에 옴
+resultArr = arr.sort((a, b) => a - b); // > 오름차순 정렬 / (b - a)하면 내림차순 정렬
+// (a - b)가 양수일 경우, a가 큰수, b가 작은수로 인식하여 정렬
+// (a - b)가 음수일 경우, a가 작은수, b가 큰수로 인식하여 정렬
+// (a - b)가 0일 경우, 같은 값으로 인식하여 정렬하지 않음
+console.log(arr, resultArr);
 
 // // Array.map(callback) : T[]
 // // 배열의 모든 요소에 대해 콜백 함수를 반복 실행한 후,
@@ -154,20 +154,20 @@ console.log(`리터럴어레이: ${myIncludes([5, 4, 3], 5)}`);
 //   }
 // });
 // console.log(arr, resultArr);
-// class MyArr{
-//   arr = [1, 2, 3, 4, 5, 6];
+class MyArr{
+  arr = [1, 2, 3, 4, 5, 6];
 
-//   map(cb) {
-//     // 새로운 배열
-//     const newArr = [];
+  map(cb) {
+    // 새로운 배열
+    const newArr = [];
 
-//     for(let i =0; i > this.arr.length; i++) {
-//       newArr.push(cb(this.arr[i]));
-//     }
+    for(let i =0; i > this.arr.length; i++) {
+      newArr.push(cb(this.arr[i]));
+    }
 
-//     return newArr;
-//   }
-// }
+    return newArr;
+  }
+}
 // const test = new MyArr();
 // resultArr = arr.map((val) => {
 //   if (val % 3 === 0) {

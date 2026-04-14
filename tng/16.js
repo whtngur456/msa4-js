@@ -20,10 +20,10 @@ box.addEventListener('click', () => {
     setTimeout(() => {
       box.style.opacity = '0';
       found = false; 
-      const randomX = Math.random() * 900;
-      const randomY = Math.random() * 900;
+      const randomX = Math.random() * (window.innerWidth - box.offsetWidth);
+      const randomY = Math.random() * (window.innerHeight - box.offsetHeight);
       box.style.left = randomX + 'px';
       box.style.top = randomY + 'px';
-  }, 1000);
+  }, 2000);
 }
 });
