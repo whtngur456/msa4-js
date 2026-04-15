@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
   const page = form.page.value;
   const limit = form.limit.value;
 
-  const url = `${baseUrl}?page=${page}&limit=${limit}`;
+  const url = `${baseUrl}?page=${page}&limit=${limit}`; 
 
 try {
   const response = await axios.get(url);
